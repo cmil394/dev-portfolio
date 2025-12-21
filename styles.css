@@ -1,44 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap');
+
 body {
-  background-color: #0b0d12;
-  background-image:
-    linear-gradient(rgba(255, 255, 255, 0.068) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255,  0.068) 1px, transparent 1px);
-  background-size: 46px 46px;
+  background-color: rgba(0, 0, 0, 0.904);
+  font-family: "Faculty Glyphic", sans-serif;
+  
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.014) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.014) 1px, transparent 1px);
+  background-size: 15px 15px;
 }
 
 .about-me {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 16px;
-  padding: 10px;
+  align-items: center;
+  flex-direction: column;
   color: white;
   margin-top: 170px;
 }
 
-.text {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-left: 8px;
-}
-
 .role {
-  opacity: 0.8;
-  font-size: 20px;
-  margin-top: -6px;
-}
-
-.me{
-  width: 300px;
-  border-radius: 15px;
+  font-size: 46px;
+  margin-top: -12px;
+  color: #E8C39A;
 }
 
 .name{
-  font-size:40px;
-}
-
-.desc{
-  margin-top: -3px;
-  font-size: 42px;
+  font-size: 26px;
 }
