@@ -318,3 +318,7 @@ body {
   font-size: 0.85rem;
   color: #9ca3af;
 }
+
+.skills-border {
+  border-bottom: 5px solid #E8C39A;
+}
