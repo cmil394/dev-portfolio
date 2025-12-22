@@ -3,57 +3,73 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Carson Mills</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <div class="scroll-indicator" aria-hidden="true">
-    <img
-      src="assests/images/down_arrow.svg"
-      class="arrow-img"
-      alt=""
-      aria-hidden="true"
-    />
-  </div>
   <body>
-    <div class="about-me">
-      <p class="name">Carson Mills</p>
-      <p class="role">Software Developer</p>
-      <div class="socials">
-        <a
-          href="https://www.linkedin.com/in/carson-mills-218221304/"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="LinkedIn"
-        >
-          <img class="icons" src="assests/images/linkedin.png" alt="LinkedIn" />
-        </a>
+    <section class="landing">
+      <div class="about-me">
+        <p class="name">Carson Mills</p>
+        <p class="role">Software Developer</p>
 
-        <a
-          href="https://github.com/cmil394"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="GitHub"
-        >
-          <img class="icons" src="assests/images/github.png" alt="GitHub" />
-        </a>
+        <div class="socials">
+          <a
+            href="https://www.linkedin.com/in/carson-mills-218221304/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+          >
+            <img
+              class="icons"
+              src="assests/images/linkedin.png"
+              alt="LinkedIn"
+            />
+          </a>
 
-        <a href="assests/Carson_Mills_CV.pdf" download aria-label="Download CV">
-          <img
-            class="icons"
-            src="assests/images/resume.png"
-            alt="Download CV"
-          />
-        </a>
+          <a
+            href="https://github.com/cmil394"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+          >
+            <img class="icons" src="assests/images/github.png" alt="GitHub" />
+          </a>
 
-        <a
-          href="mailto:carsonkmills5@gmail.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Email"
-        >
-          <img class="icons" src="assests/images/email.png" alt="Email" />
-        </a>
+          <a
+            href="assests/Carson_Mills_CV.pdf"
+            download
+            aria-label="Download CV"
+          >
+            <img
+              class="icons"
+              src="assests/images/resume.png"
+              alt="Download CV"
+            />
+          </a>
+
+          <a href="mailto:carsonkmills5@gmail.com" aria-label="Email">
+            <img class="icons" src="assests/images/email.png" alt="Email" />
+          </a>
+        </div>
       </div>
-    </div>
+
+      <div class="scroll-indicator">
+        <img
+          src="assests/images/down_arrow.svg"
+          class="arrow-img"
+          alt="Scroll down"
+        />
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <h2 class="section-title">Projects</h2>
+
+      <div class="projects-grid">
+        <div class="projects-card">Project 1</div>
+        <div class="projects-card">Project 2</div>
+        <div class="projects-card">Project 3</div>
+      </div>
+    </section>
   </body>
 </html>
