@@ -1,3 +1,5 @@
+// Projects Animation
+
 const scrollIndicator = document.querySelector('.scroll-indicator');
 
 window.addEventListener('scroll', () => {
@@ -32,6 +34,8 @@ projectCards.forEach((card, index) => {
   card.style.transitionDelay = `${index * 0.1}s`;
   observer.observe(card);
 });
+
+// Skills Animation
 
 const skillsSection = document.querySelector('.skills');
 const skillCards = document.querySelectorAll('.skill-card');
