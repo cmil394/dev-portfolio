@@ -303,6 +303,14 @@ body {
   padding: 6rem 2rem;
   max-width: 1200px;
   margin: 0 auto;
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.skills.visible {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .section-title-skills {
@@ -345,7 +353,14 @@ body {
   );
   border-radius: 14px;
   border: 1px solid rgba(255, 255, 255, 0.06);
-  transition: transform 0.2s ease, border 0.2s ease;
+  transition: transform 0.2s ease, border 0.2s ease, opacity 0.6s ease;
+  opacity: 0;
+  transform: translateX(-50px);
+}
+
+.skill-card.visible {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .skill-card:hover {

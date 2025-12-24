@@ -32,3 +32,15 @@ projectCards.forEach((card, index) => {
   card.style.transitionDelay = `${index * 0.1}s`;
   observer.observe(card);
 });
+
+const skillsSection = document.querySelector('.skills');
+const skillCards = document.querySelectorAll('.skill-card');
+
+if (skillsSection) {
+  observer.observe(skillsSection);
+}
+
+skillCards.forEach((card, index) => {
+  card.style.transitionDelay = `${index * 0.1}s`;
+  observer.observe(card);
+});
