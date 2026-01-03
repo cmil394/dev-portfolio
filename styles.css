@@ -56,6 +56,15 @@ body {
   font-size: 46px;
   margin-top: -12px;
   color: #E8C39A;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .role {
+    font-size: 36px;
+    line-height: 1.1;
+    max-width: 90vw;
+  }
 }
 
 .socials {
