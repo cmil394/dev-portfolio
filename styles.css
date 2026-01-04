@@ -196,11 +196,28 @@ body {
   display: flex;
   flex-direction: column;
   transform: translateX(-50px);
+  max-height: 100%;
 }
 
 .project-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 600px) {
+  .footer-links {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .project-card {
+    aspect-ratio: unset;
+    min-height: 420px;
+  }
+  
+  .project-image {
+    flex: 0 0 180px;
+  }
 }
 
 
@@ -220,6 +237,27 @@ body {
   padding: 16px 18px;
   display: flex;
   flex-direction: column;
+  overflow-y: auto;
+  overflow-x: hidden;
+  min-height: 0;
+}
+
+.project-info::-webkit-scrollbar {
+  width: 6px;
+}
+
+.project-info::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+}
+
+.project-info::-webkit-scrollbar-thumb {
+  background: rgba(232, 195, 154, 0.4);
+  border-radius: 10px;
+}
+
+.project-info::-webkit-scrollbar-thumb:hover {
+  background: rgba(232, 195, 154, 0.6);
 }
 
 .project-info h3 {
