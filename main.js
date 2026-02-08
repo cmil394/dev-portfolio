@@ -1,30 +1,29 @@
 // Projects Animation
 
-const scrollIndicator = document.querySelector('.scroll-indicator');
+const scrollIndicator = document.querySelector(".scroll-indicator");
 
-window.addEventListener('scroll', () => {
+window.addEventListener("scroll", () => {
   if (window.scrollY > 100) {
-    scrollIndicator.classList.add('hidden');
+    scrollIndicator.classList.add("hidden");
   } else {
-    scrollIndicator.classList.remove('hidden');
+    scrollIndicator.classList.remove("hidden");
   }
 });
 
-const projectsSection = document.querySelector('.projects');
-const projectCards = document.querySelectorAll('.project-card');
+const projectsSection = document.querySelector(".projects");
+const projectCards = document.querySelectorAll(".project-card");
 const observerOptions = {
   threshold: 0.15,
-  rootMargin: '0px'
+  rootMargin: "0px",
 };
 
 const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
+  entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
+      entry.target.classList.add("visible");
     }
   });
 }, observerOptions);
-
 
 if (projectsSection) {
   observer.observe(projectsSection);
@@ -35,10 +34,24 @@ projectCards.forEach((card, index) => {
   observer.observe(card);
 });
 
+// Experience Animation
+
+const experienceSection = document.querySelector(".experience");
+const experienceItems = document.querySelectorAll(".experience-item");
+
+if (experienceSection) {
+  observer.observe(experienceSection);
+}
+
+experienceItems.forEach((item, index) => {
+  item.style.transitionDelay = `${index * 0.05}s`;
+  observer.observe(item);
+});
+
 // Skills Animation
 
-const skillsSection = document.querySelector('.skills');
-const skillCards = document.querySelectorAll('.skill-card');
+const skillsSection = document.querySelector(".skills");
+const skillCards = document.querySelectorAll(".skill-card");
 
 if (skillsSection) {
   observer.observe(skillsSection);
