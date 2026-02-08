@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap");
 
 body {
   margin: 0;
   font-family: "Faculty Glyphic", sans-serif;
   background-color: rgba(0, 0, 0, 0.904);
 
-  background-image: 
+  background-image:
     linear-gradient(rgba(255, 255, 255, 0.014) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255, 255, 255, 0.014) 1px, transparent 1px);
   background-size: 15px 15px;
@@ -20,7 +20,7 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
 }
 
 .landing-content {
@@ -55,7 +55,7 @@ body {
 .role {
   font-size: 46px;
   margin-top: -12px;
-  color: #E8C39A;
+  color: #e8c39a;
   text-align: center;
 }
 
@@ -134,7 +134,8 @@ body {
 }
 
 @keyframes bounce {
-  0%, 100% {
+  0%,
+  100% {
     transform: translate(-50%, 0);
   }
   50% {
@@ -146,11 +147,13 @@ body {
 .projects {
   padding: 100px 8vw;
   background-color: rgb(24, 24, 24);
-  border-top: 5px solid #E8C39A;
-  border-bottom: 5px solid #E8C39A;
+  border-top: 5px solid #e8c39a;
+  border-bottom: 5px solid #e8c39a;
   opacity: 0;
   transform: translateX(-100px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
 }
 
 .projects.visible {
@@ -161,27 +164,74 @@ body {
 .section-title-projects {
   font-size: 36px;
   margin-bottom: 55px;
-  color: #E8C39A;
+  color: #e8c39a;
   display: flex;
   justify-content: center;
 }
 
-.guess_which_img{
+.guess_which_img {
   background-image: url(assests/images/guess_which.PNG);
 }
 
-.muscle_mate_img{
+.muscle_mate_img {
   background-image: url(assests/images/muscle_mate.PNG);
 }
 
-.portfolio_img{
+.portfolio_img {
   background-image: url(assests/images/portfolio.PNG);
+}
+
+.lol_connections_img {
+  background-image: url(assests/images/lol_connections.PNG);
+}
+
+.podcast_webapp_img {
+  background-image: url(assests/images/podcast_webapp.png);
+}
+
+.concert_booking_service_img {
+  background-image: url(assests/images/concert_booking_service.png);
 }
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 32px;
+}
+
+@media (max-width: 1100px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}
+
+@media (max-width: 700px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .projects {
+    padding: 80px 4vw;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .project-card {
+    aspect-ratio: unset;
+    min-height: 380px;
+    width: 100%;
+  }
+
+  .project-image {
+    flex: 0 0 160px;
+  }
 }
 
 .project-card {
@@ -191,7 +241,10 @@ body {
   overflow: hidden;
   text-decoration: none;
   color: white;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.6s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    opacity 0.6s ease;
   border: #ffffff60 3px solid;
   display: flex;
   flex-direction: column;
@@ -203,23 +256,6 @@ body {
   transform: translateY(-6px);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
 }
-
-@media (max-width: 600px) {
-  .footer-links {
-    flex-direction: column;
-    gap: 0.75rem;
-  }
-  
-  .project-card {
-    aspect-ratio: unset;
-    min-height: 420px;
-  }
-  
-  .project-image {
-    flex: 0 0 180px;
-  }
-}
-
 
 .project-card.visible {
   opacity: 1;
@@ -263,7 +299,7 @@ body {
 .project-info h3 {
   margin: 0;
   font-size: 20px;
-  color: #E8C39A;
+  color: #e8c39a;
 }
 
 .project-info p {
@@ -282,7 +318,7 @@ body {
 
 .tech {
   background-color: rgba(232, 195, 154, 0.2);
-  color: #E8C39A;
+  color: #e8c39a;
   font-size: 12px;
   padding: 4px 8px;
   border-radius: 6px;
@@ -301,10 +337,9 @@ body {
 }
 
 .project-links a:hover {
-  background-color: #E8C39A;
+  background-color: #e8c39a;
   color: #111;
 }
-
 
 .icon-button {
   width: 52px;
@@ -331,7 +366,7 @@ body {
 }
 
 .icon-button:hover {
-  background-color: #E8C39A;
+  background-color: #e8c39a;
   transform: translateY(-2px);
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.35);
 }
@@ -353,7 +388,9 @@ body {
   margin: 0 auto;
   opacity: 0;
   transform: translateX(-100px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
 }
 
 .skills.visible {
@@ -364,11 +401,10 @@ body {
 .section-title-skills {
   font-size: 36px;
   margin-bottom: 5px;
-  color: #E8C39A;
+  color: #e8c39a;
   display: flex;
   justify-content: center;
 }
-
 
 .skills-header {
   display: flex;
@@ -401,7 +437,10 @@ body {
   );
   border-radius: 14px;
   border: 1px solid rgba(255, 255, 255, 0.06);
-  transition: transform 0.2s ease, border 0.2s ease, opacity 0.6s ease;
+  transition:
+    transform 0.2s ease,
+    border 0.2s ease,
+    opacity 0.6s ease;
   opacity: 0;
   transform: translateX(-50px);
 }
@@ -433,12 +472,12 @@ body {
 }
 
 .skills-border {
-  border-bottom: 5px solid #E8C39A;
+  border-bottom: 5px solid #e8c39a;
 }
 
 .footer {
   background-color: rgb(24, 24, 24);
-  border-top: 0px solid #E8C39A;
+  border-top: 0px solid #e8c39a;
   padding: 2.5rem 1.5rem;
 }
 
@@ -465,16 +504,18 @@ body {
 
 .footer-email {
   font-size: 0.9rem;
-  color: #E8C39A;
+  color: #e8c39a;
   cursor: default;
   user-select: text;
 }
 
 .footer-links a {
   font-size: 0.9rem;
-  color: #E8C39A;
+  color: #e8c39a;
   text-decoration: none;
-  transition: opacity 0.2s ease, transform 0.2s ease;
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
 }
 
 .footer-links a:hover {
