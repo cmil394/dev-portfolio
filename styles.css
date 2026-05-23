@@ -169,6 +169,10 @@ body {
   justify-content: center;
 }
 
+.time_software_img {
+  background-image: url(assests/images/time_software_dashboard.jpg);
+}
+
 .guess_which_img {
   background-image: url(assests/images/guess_which.PNG);
 }
@@ -374,6 +378,11 @@ body {
 .icon-button:hover img {
   transform: scale(1.15);
   filter: brightness(0) saturate(100%);
+}
+
+.icon-button img[alt="YouTube"] {
+  width: 32px;
+  height: 32px;
 }
 
 .icon-button:active {
